@@ -34,11 +34,9 @@ class GestorArchivos:
                         #agrega el cliente a la lista
                         clientes.append(cliente)
                         linea = archivo.readline()
-                print('return de cargar_clientes')
                 return clientes
     
             except FileNotFoundError:
-                print('entrando al except')
                 return []
 
     def agregar_cliente(self, cliente):
